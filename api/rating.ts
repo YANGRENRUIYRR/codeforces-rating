@@ -53,7 +53,7 @@ async function getBadgeImage(username: string, data: UserRatingInfo, style: stri
 }
 
 export default async (request: VercelRequest, response: VercelResponse) => {
-    let { username = 'baoshuo', style = 'for-the-badge' } = request.query;
+    let { username = 'yangrenrui', style = 'for-the-badge' } = request.query;
 
     if (Array.isArray(username)) username = username[0];
     if (Array.isArray(style)) style = style[0];
